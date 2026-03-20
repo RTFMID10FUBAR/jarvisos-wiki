@@ -1,0 +1,56 @@
+{
+  "personas": {
+    "jarvis": {
+      "label": "Jarvis",
+      "default_mode": "operator"
+    },
+    "delaney": {
+      "label": "Delaney",
+      "default_mode": "companion"
+    }
+  },
+  "modules": {
+    "actions": {
+      "enabled": true,
+      "package": "modules.actions",
+      "widget": "actions-card",
+      "personas": ["jarvis", "delaney"]
+    },
+    "legal_ops": {
+      "enabled": true,
+      "package": "modules.legal_ops",
+      "widget": "legal-card",
+      "personas": ["jarvis"]
+    },
+    "memory": {
+      "enabled": true,
+      "package": "modules.memory",
+      "widget": "memory-card",
+      "personas": ["jarvis", "delaney"]
+    },
+    "voice": {
+      "enabled": true,
+      "package": "modules.voice",
+      "widget": "voice-card",
+      "personas": ["jarvis", "delaney"]
+    },
+    "ideas": {
+      "enabled": true,
+      "package": "modules.ideas",
+      "widget": "ideas-card",
+      "personas": ["jarvis"]
+    },
+    "screen": {
+      "enabled": false,
+      "package": "modules.screen",
+      "widget": "screen-card",
+      "personas": ["jarvis"]
+    },
+    "recon": {
+      "enabled": false,
+      "package": "modules.recon",
+      "widget": "recon-card",
+      "personas": ["jarvis"]
+    }
+  }
+}
