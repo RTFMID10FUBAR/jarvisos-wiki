@@ -1,0 +1,545 @@
+./_patch_backups/2026-01-19_231817/services_api.py:45:    import uvicorn
+./_patch_backups/2026-01-19_231817/services_api.py:46:    uvicorn.run(app, host="0.0.0.0", port=7070)
+./venv/lib64/python3.12/site-packages/uvicorn/middleware/message_logger.py:4:from uvicorn._types import (
+./venv/lib64/python3.12/site-packages/uvicorn/middleware/message_logger.py:12:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib64/python3.12/site-packages/uvicorn/middleware/message_logger.py:40:        self.logger = logging.getLogger("uvicorn.asgi")
+./venv/lib64/python3.12/site-packages/uvicorn/middleware/proxy_headers.py:5:from uvicorn._types import ASGI3Application, ASGIReceiveCallable, ASGISendCallable, Scope
+./venv/lib64/python3.12/site-packages/uvicorn/middleware/proxy_headers.py:53:                    # See: https://github.com/Kludex/uvicorn/issues/1068
+./venv/lib64/python3.12/site-packages/uvicorn/middleware/proxy_headers.py:141:        # See https://github.com/Kludex/uvicorn/issues/1068#issuecomment-855371576
+./venv/lib64/python3.12/site-packages/uvicorn/middleware/wsgi.py:11:from uvicorn._types import (
+./venv/lib64/python3.12/site-packages/uvicorn/middleware/asgi2.py:1:from uvicorn._types import (
+./venv/lib64/python3.12/site-packages/uvicorn/main.py:16:import uvicorn
+./venv/lib64/python3.12/site-packages/uvicorn/main.py:17:from uvicorn._types import ASGIApplication
+./venv/lib64/python3.12/site-packages/uvicorn/main.py:18:from uvicorn.config import (
+./venv/lib64/python3.12/site-packages/uvicorn/main.py:31:from uvicorn.server import Server
+./venv/lib64/python3.12/site-packages/uvicorn/main.py:32:from uvicorn.supervisors import ChangeReload, Multiprocess
+./venv/lib64/python3.12/site-packages/uvicorn/main.py:45:logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/main.py:52:        "Running uvicorn {version} with {py_implementation} {py_version} on {system}".format(  # noqa: UP032
+./venv/lib64/python3.12/site-packages/uvicorn/main.py:53:            version=uvicorn.__version__,
+./venv/lib64/python3.12/site-packages/uvicorn/main.py:359:    help="Display the uvicorn version and exit.",
+./venv/lib64/python3.12/site-packages/uvicorn/main.py:594:        logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/main.py:620:            "uvicorn.main.ServerState is deprecated, use uvicorn.server.ServerState instead.",
+./venv/lib64/python3.12/site-packages/uvicorn/main.py:623:        from uvicorn.server import ServerState
+./venv/lib64/python3.12/site-packages/uvicorn/workers.py:13:from uvicorn._compat import asyncio_run
+./venv/lib64/python3.12/site-packages/uvicorn/workers.py:14:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/workers.py:15:from uvicorn.server import Server
+./venv/lib64/python3.12/site-packages/uvicorn/workers.py:18:    "The `uvicorn.workers` module is deprecated. Please use `uvicorn-worker` package instead.\n"
+./venv/lib64/python3.12/site-packages/uvicorn/workers.py:19:    "For more details, see https://github.com/Kludex/uvicorn-worker.",
+./venv/lib64/python3.12/site-packages/uvicorn/workers.py:35:        logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/workers.py:40:        logger = logging.getLogger("uvicorn.access")
+./venv/lib64/python3.12/site-packages/uvicorn/workers.py:77:        # See: https://github.com/Kludex/uvicorn/issues/894
+./venv/lib64/python3.12/site-packages/uvicorn/workers.py:88:        - https://github.com/Kludex/uvicorn/issues/1116
+./venv/lib64/python3.12/site-packages/uvicorn/loops/auto.py:11:        from uvicorn.loops.asyncio import asyncio_loop_factory as loop_factory
+./venv/lib64/python3.12/site-packages/uvicorn/loops/auto.py:15:        from uvicorn.loops.uvloop import uvloop_loop_factory
+./venv/lib64/python3.12/site-packages/uvicorn/lifespan/off.py:5:from uvicorn import Config
+./venv/lib64/python3.12/site-packages/uvicorn/lifespan/on.py:8:from uvicorn import Config
+./venv/lib64/python3.12/site-packages/uvicorn/lifespan/on.py:9:from uvicorn._types import (
+./venv/lib64/python3.12/site-packages/uvicorn/lifespan/on.py:37:        self.logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/lifespan/on.py:53:        # See https://github.com/Kludex/uvicorn/pull/972
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:17:from uvicorn._types import (
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:27:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:28:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:29:from uvicorn.protocols.utils import (
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:37:from uvicorn.server import ServerState
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:59:        self.logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:93:            logger=logging.getLogger("uvicorn.error"),
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/wsproto_impl.py:14:from uvicorn._types import (
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/wsproto_impl.py:25:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/wsproto_impl.py:26:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/wsproto_impl.py:27:from uvicorn.protocols.utils import (
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/wsproto_impl.py:35:from uvicorn.server import ServerState
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/wsproto_impl.py:52:        self.logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/auto.py:15:        from uvicorn.protocols.websockets.wsproto_impl import WSProtocol
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/auto.py:19:    from uvicorn.protocols.websockets.websockets_impl import WebSocketProtocol
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:20:from uvicorn._types import (
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:33:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:34:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:35:from uvicorn.protocols.utils import (
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:43:from uvicorn.server import ServerState
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:113:            logger=logging.getLogger("uvicorn.error"),
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:226:        # itself (see https://github.com/Kludex/uvicorn/issues/920)
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/utils.py:7:from uvicorn._types import WWWScope
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/auto.py:9:    from uvicorn.protocols.http.h11_impl import H11Protocol
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/auto.py:13:    from uvicorn.protocols.http.httptools_impl import HttpToolsProtocol
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:14:from uvicorn._types import (
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:23:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:24:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:25:from uvicorn.protocols.http.flow_control import CLOSE_HEADER, HIGH_WATER_LIMIT, FlowControl, service_unavailable
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:26:from uvicorn.protocols.utils import get_client_addr, get_local_addr, get_path_with_query_string, get_remote_addr, is_ssl
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:27:from uvicorn.server import ServerState
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:54:        self.logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:55:        self.access_logger = logging.getLogger("uvicorn.access")
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:159:            msg = "No supported WebSocket library detected. Please use \"pip install 'uvicorn[standard]'\", or install 'websockets' or 'wsproto' manually."  # noqa: E501
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:16:from uvicorn._types import (
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:24:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:25:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:26:from uvicorn.protocols.http.flow_control import CLOSE_HEADER, HIGH_WATER_LIMIT, FlowControl, service_unavailable
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:27:from uvicorn.protocols.utils import get_client_addr, get_local_addr, get_path_with_query_string, get_remote_addr, is_ssl
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:28:from uvicorn.server import ServerState
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:59:        self.logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:60:        self.access_logger = logging.getLogger("uvicorn.access")
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:162:            msg = "No supported WebSocket library detected. Please use \"pip install 'uvicorn[standard]'\", or install 'websockets' or 'wsproto' manually."  # noqa: E501
+./venv/lib64/python3.12/site-packages/uvicorn/protocols/http/flow_control.py:3:from uvicorn._types import ASGIReceiveCallable, ASGISendCallable, Scope
+./venv/lib64/python3.12/site-packages/uvicorn/server.py:22:from uvicorn._compat import asyncio_run
+./venv/lib64/python3.12/site-packages/uvicorn/server.py:23:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/server.py:26:    from uvicorn.protocols.http.h11_impl import H11Protocol
+./venv/lib64/python3.12/site-packages/uvicorn/server.py:27:    from uvicorn.protocols.http.httptools_impl import HttpToolsProtocol
+./venv/lib64/python3.12/site-packages/uvicorn/server.py:28:    from uvicorn.protocols.websockets.websockets_impl import WebSocketProtocol
+./venv/lib64/python3.12/site-packages/uvicorn/server.py:29:    from uvicorn.protocols.websockets.websockets_sansio_impl import WebSocketsSansIOProtocol
+./venv/lib64/python3.12/site-packages/uvicorn/server.py:30:    from uvicorn.protocols.websockets.wsproto_impl import WSProtocol
+./venv/lib64/python3.12/site-packages/uvicorn/server.py:41:logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/basereload.py:15:from uvicorn._subprocess import get_subprocess
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/basereload.py:16:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/basereload.py:23:logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/watchfilesreload.py:9:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/watchfilesreload.py:10:from uvicorn.supervisors.basereload import BaseReload
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/statreload.py:8:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/statreload.py:9:from uvicorn.supervisors.basereload import BaseReload
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/statreload.py:11:logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/__init__.py:5:from uvicorn.supervisors.basereload import BaseReload
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/__init__.py:6:from uvicorn.supervisors.multiprocess import Multiprocess
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/__init__.py:12:        from uvicorn.supervisors.watchfilesreload import WatchFilesReload as ChangeReload
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/__init__.py:14:        from uvicorn.supervisors.statreload import StatReload as ChangeReload
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/multiprocess.py:14:from uvicorn._subprocess import get_subprocess
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/multiprocess.py:15:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/supervisors/multiprocess.py:23:logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/__main__.py:1:import uvicorn
+./venv/lib64/python3.12/site-packages/uvicorn/__main__.py:4:    uvicorn.main()
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:19:from uvicorn._compat import iscoroutinefunction
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:20:from uvicorn._types import ASGIApplication
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:21:from uvicorn.importer import ImportFromStringError, import_from_string
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:22:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:23:from uvicorn.middleware.asgi2 import ASGI2Middleware
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:24:from uvicorn.middleware.message_logger import MessageLoggerMiddleware
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:25:from uvicorn.middleware.proxy_headers import ProxyHeadersMiddleware
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:26:from uvicorn.middleware.wsgi import WSGIMiddleware
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:43:    "auto": "uvicorn.protocols.http.auto:AutoHTTPProtocol",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:44:    "h11": "uvicorn.protocols.http.h11_impl:H11Protocol",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:45:    "httptools": "uvicorn.protocols.http.httptools_impl:HttpToolsProtocol",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:48:    "auto": "uvicorn.protocols.websockets.auto:AutoWebSocketsProtocol",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:50:    "websockets": "uvicorn.protocols.websockets.websockets_impl:WebSocketProtocol",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:51:    "websockets-sansio": "uvicorn.protocols.websockets.websockets_sansio_impl:WebSocketsSansIOProtocol",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:52:    "wsproto": "uvicorn.protocols.websockets.wsproto_impl:WSProtocol",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:55:    "auto": "uvicorn.lifespan.on:LifespanOn",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:56:    "on": "uvicorn.lifespan.on:LifespanOn",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:57:    "off": "uvicorn.lifespan.off:LifespanOff",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:61:    "auto": "uvicorn.loops.auto:auto_loop_factory",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:62:    "asyncio": "uvicorn.loops.asyncio:asyncio_loop_factory",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:63:    "uvloop": "uvicorn.loops.uvloop:uvloop_loop_factory",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:74:            "()": "uvicorn.logging.DefaultFormatter",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:79:            "()": "uvicorn.logging.AccessFormatter",
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:96:        "uvicorn": {"handlers": ["default"], "level": "INFO", "propagate": False},
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:97:        "uvicorn.error": {"level": "INFO"},
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:98:        "uvicorn.access": {"handlers": ["access"], "level": "INFO", "propagate": False},
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:102:logger = logging.getLogger("uvicorn.error")
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:378:                # Install the PyYAML package or the uvicorn[standard] optional
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:395:            logging.getLogger("uvicorn.error").setLevel(log_level)
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:396:            logging.getLogger("uvicorn.access").setLevel(log_level)
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:397:            logging.getLogger("uvicorn.asgi").setLevel(log_level)
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:399:            logging.getLogger("uvicorn.access").handlers = []
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:400:            logging.getLogger("uvicorn.access").propagate = False
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:421:            [(b"server", b"uvicorn")] + encoded_headers
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:483:            "The `setup_event_loop` method was replaced by `get_loop_factory` in uvicorn 0.36.0.\n"
+./venv/lib64/python3.12/site-packages/uvicorn/config.py:485:            "https://github.com/Kludex/uvicorn/discussions/2706. Thank you, and sorry for the inconvenience."
+./venv/lib64/python3.12/site-packages/uvicorn/_subprocess.py:15:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/__init__.py:1:from uvicorn.config import Config
+./venv/lib64/python3.12/site-packages/uvicorn/__init__.py:2:from uvicorn.main import Server, main, run
+./venv/lib64/python3.12/site-packages/starlette-0.52.1.dist-info/METADATA:90:You'll also want to install an ASGI server, such as [uvicorn](https://www.uvicorn.org/), [daphne](https://github.com/django/daphne/), or [hypercorn](https://hypercorn.readthedocs.io/en/latest/).
+./venv/lib64/python3.12/site-packages/starlette-0.52.1.dist-info/METADATA:93:$ pip install uvicorn
+./venv/lib64/python3.12/site-packages/starlette-0.52.1.dist-info/METADATA:117:$ uvicorn main:app
+./venv/lib64/python3.12/site-packages/starlette-0.52.1.dist-info/METADATA:150:$ uvicorn example:app
+./venv/lib64/python3.12/site-packages/starlette-0.52.1.dist-info/METADATA:155:Run uvicorn with `--reload` to enable auto-reloading on code changes.
+./venv/lib64/python3.12/site-packages/websockets-16.0.dist-info/METADATA:153:  uvicorn_ or Sanic_.
+./venv/lib64/python3.12/site-packages/websockets-16.0.dist-info/METADATA:155:.. _uvicorn: https://www.uvicorn.org/
+./venv/lib64/python3.12/site-packages/pydantic/_internal/_validators.py:80:    """Inspired by uvicorn — dotted paths should include a colon before the final item if that item is not a module.
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/entry_points.txt:2:uvicorn = uvicorn.main:main
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:2:Name: uvicorn
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:5:Project-URL: Changelog, https://uvicorn.dev/release-notes
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:7:Project-URL: Homepage, https://uvicorn.dev/
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:8:Project-URL: Source, https://github.com/Kludex/uvicorn
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:41:  <img width="320" height="320" src="https://raw.githubusercontent.com/tomchristie/uvicorn/main/docs/uvicorn.png" alt='uvicorn'>
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:50:[![Build Status](https://github.com/Kludex/uvicorn/workflows/Test%20Suite/badge.svg)](https://github.com/Kludex/uvicorn/actions)
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:51:[![Package version](https://badge.fury.io/py/uvicorn.svg)](https://pypi.python.org/pypi/uvicorn)
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:52:[![Supported Python Version](https://img.shields.io/pypi/pyversions/uvicorn.svg?color=%2334D058)](https://pypi.org/project/uvicorn)
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:57:**Documentation**: [https://uvicorn.dev](https://uvicorn.dev)
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:59:**Source Code**: [https://www.github.com/Kludex/uvicorn](https://www.github.com/Kludex/uvicorn)
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:76:$ pip install uvicorn
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:79:This will install uvicorn with minimal (pure Python) dependencies.
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:82:$ pip install 'uvicorn[standard]'
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:85:This will install uvicorn with "Cython-based" dependencies (where possible) and other "optional extras".
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:122:$ uvicorn example:app
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:184:<p align="center"><i>Uvicorn is <a href="https://github.com/Kludex/uvicorn/blob/main/LICENSE.md">BSD licensed</a> code.<br/>Designed & crafted with care.</i><br/>&mdash; 🦄  &mdash;</p>
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:1:../../../bin/uvicorn,sha256=-cAZFfg7HpAFTOq6pEAvlipWX3ig-XF9qK6myUUQloU,173
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:2:uvicorn-0.42.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:3:uvicorn-0.42.0.dist-info/METADATA,sha256=0NS0dEthj9a5UxNHad3aucGZZU4_o4mwyVk2Obn_apk,6738
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:4:uvicorn-0.42.0.dist-info/RECORD,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:5:uvicorn-0.42.0.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:6:uvicorn-0.42.0.dist-info/WHEEL,sha256=QccIxa26bgl1E6uMy58deGWi-0aeIkkangHcxk2kWfw,87
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:7:uvicorn-0.42.0.dist-info/entry_points.txt,sha256=FW1w-hkc9QgwaGoovMvm0ZY73w_NcycWdGAUfDsNGxw,46
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:8:uvicorn-0.42.0.dist-info/licenses/LICENSE.md,sha256=7-Gs8-YvuZwoiw7HPlp3O3Jo70Mg_nV-qZQhTktjw3E,1526
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:9:uvicorn/__init__.py,sha256=9qo5xhNrQkfqrw9g1XU-bGRK_dNk1nCBRzUa0WDx4fk,147
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:10:uvicorn/__main__.py,sha256=DQizy6nKP0ywhPpnCHgmRDYIMfcqZKVEzNIWQZjqtVQ,62
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:11:uvicorn/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:12:uvicorn/__pycache__/__main__.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:13:uvicorn/__pycache__/_compat.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:14:uvicorn/__pycache__/_subprocess.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:15:uvicorn/__pycache__/_types.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:16:uvicorn/__pycache__/config.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:17:uvicorn/__pycache__/importer.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:18:uvicorn/__pycache__/logging.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:19:uvicorn/__pycache__/main.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:20:uvicorn/__pycache__/server.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:21:uvicorn/__pycache__/workers.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:22:uvicorn/_compat.py,sha256=6X49c9ovzmMHir2S3syinOQMzSPBcp8MNuI9ZQrbYiU,2916
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:23:uvicorn/_subprocess.py,sha256=fQ4JTajuXay6mVc8KQNGfXu6JHoab46aS6kyIMWJMPk,2776
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:24:uvicorn/_types.py,sha256=JDM6E-hqZ6o_cSZvjDULjAv77PFH2pLe_Vgqshe8qH4,7677
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:25:uvicorn/config.py,sha256=aYK4Nc-M0uvbT4LmgIvY8c00kekEz0P4BWhG8VMojcg,22095
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:26:uvicorn/importer.py,sha256=nRt0QQ3qpi264-n_mR0l55C2ddM8nowTNzT1jsWaam8,1128
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:27:uvicorn/lifespan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:28:uvicorn/lifespan/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:29:uvicorn/lifespan/__pycache__/off.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:30:uvicorn/lifespan/__pycache__/on.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:31:uvicorn/lifespan/off.py,sha256=nfI6qHAUo_8-BEXMBKoHQ9wUbsXrPaXLCbDSS0vKSr8,332
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:32:uvicorn/lifespan/on.py,sha256=iETPFj6SFhPDPcdeGxfa43LKImJU7MI5i7QUUepBcPE,5173
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:33:uvicorn/logging.py,sha256=IBPSo2qRBWJRj5C2nN7I1civFAj9jKZ5Azxk0JpPB98,4235
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:34:uvicorn/loops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:35:uvicorn/loops/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:36:uvicorn/loops/__pycache__/asyncio.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:37:uvicorn/loops/__pycache__/auto.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:38:uvicorn/loops/__pycache__/uvloop.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:39:uvicorn/loops/asyncio.py,sha256=a8wO4fB4pCk-RLICq7CnGr_cxQI7MBLJj-Go4UQldD8,333
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:40:uvicorn/loops/auto.py,sha256=pdTsMcqkbE8fvdNgLs1y4c6hsuN598mZOSOlC0a23S4,566
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:41:uvicorn/loops/uvloop.py,sha256=Ca-TL-W8tbdEW5uvL_GrMih7G8e_t_vhNevi2NKYjEU,236
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:42:uvicorn/main.py,sha256=e3CTIV0c80cp1639Ttnej7b5uvdtgLLWtSOcHU8Gu54,18183
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:43:uvicorn/middleware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:44:uvicorn/middleware/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:45:uvicorn/middleware/__pycache__/asgi2.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:46:uvicorn/middleware/__pycache__/message_logger.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:47:uvicorn/middleware/__pycache__/proxy_headers.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:48:uvicorn/middleware/__pycache__/wsgi.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:49:uvicorn/middleware/asgi2.py,sha256=YQrQNm3RehFts3mzk3k4yw8aD8Egtj0tRS3N45YkQa0,394
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:50:uvicorn/middleware/message_logger.py,sha256=IHEZUSnFNaMFUFdwtZO3AuFATnYcSor-gVtOjbCzt8M,2859
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:51:uvicorn/middleware/proxy_headers.py,sha256=yQG3ThmZhRh9jp-AId7DQhb5WVl6to0hD1G0DPrtLow,5790
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:52:uvicorn/middleware/wsgi.py,sha256=VnbnkdCL3_ctLWzk1j39xvxysuoAB3kSYmi8TsOLpNs,7125
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:53:uvicorn/protocols/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:54:uvicorn/protocols/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:55:uvicorn/protocols/__pycache__/utils.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:56:uvicorn/protocols/http/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:57:uvicorn/protocols/http/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:58:uvicorn/protocols/http/__pycache__/auto.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:59:uvicorn/protocols/http/__pycache__/flow_control.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:60:uvicorn/protocols/http/__pycache__/h11_impl.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:61:uvicorn/protocols/http/__pycache__/httptools_impl.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:62:uvicorn/protocols/http/auto.py,sha256=YfXGyzWTaaE2p_jkTPWrJCXsxEaQnC3NK0-G7Wgmnls,403
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:63:uvicorn/protocols/http/flow_control.py,sha256=050WVg31EvPOkHwynCoMP1zXFl_vO3U4durlc5vyp4U,1701
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:64:uvicorn/protocols/http/h11_impl.py,sha256=pAl-5O1oLVzNPzDpK_S5SKBwpzTthOkieohz5cZzypM,21225
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:65:uvicorn/protocols/http/httptools_impl.py,sha256=esxm8Wy_jg-egyOMSrLLEsqzx4_IMJ1lHWfYfXHySdo,22322
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:66:uvicorn/protocols/utils.py,sha256=1hKdDCmo_GtGrK1zZfa70jL7Hr3mDE8RnL69O4rHQRg,2058
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:67:uvicorn/protocols/websockets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:68:uvicorn/protocols/websockets/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:69:uvicorn/protocols/websockets/__pycache__/auto.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:70:uvicorn/protocols/websockets/__pycache__/websockets_impl.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:71:uvicorn/protocols/websockets/__pycache__/websockets_sansio_impl.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:72:uvicorn/protocols/websockets/__pycache__/wsproto_impl.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:73:uvicorn/protocols/websockets/auto.py,sha256=pAEMIsyXQ12CL6ffaEJQ2cQEC8yAr8sr7bC0H6hzBfs,590
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:74:uvicorn/protocols/websockets/websockets_impl.py,sha256=l4pBaHAsvM-Y_BoPhe8j0fq1DCjqjPJ2PYRDUbukjRs,15419
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:75:uvicorn/protocols/websockets/websockets_sansio_impl.py,sha256=Tt0NWFvJeDq7o6vzE-KORIN75rkDEmQ2-JxTtl4yKC8,17221
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:76:uvicorn/protocols/websockets/wsproto_impl.py,sha256=uVOrpfa4tdY-dNGAJdcpvDYxCT6tM6voaeKK9zJtsp4,15273
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:77:uvicorn/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:78:uvicorn/server.py,sha256=fXk3__HBf1g-oh_4_OXIpb8tnTyafxuWRiEet6SQEvM,13368
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:79:uvicorn/supervisors/__init__.py,sha256=wT8eOEIqT1yWQgytZtv5taWMul7xoTIY0xm1m4oyPTw,507
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:80:uvicorn/supervisors/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:81:uvicorn/supervisors/__pycache__/basereload.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:82:uvicorn/supervisors/__pycache__/multiprocess.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:83:uvicorn/supervisors/__pycache__/statreload.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:84:uvicorn/supervisors/__pycache__/watchfilesreload.cpython-312.pyc,,
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:85:uvicorn/supervisors/basereload.py,sha256=mYOPopNS6fVTrqfQ4HzclH7Xw-VVQy7ZDSINv5_lu04,4018
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:86:uvicorn/supervisors/multiprocess.py,sha256=_lU92Bnf_IqibFmmNoojY3J3fR6LzSBa76BpmcSMfHc,7580
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:87:uvicorn/supervisors/statreload.py,sha256=XPaEtVXaasII1kkG32UUG8oD7-fS0FwyXkQLF9QYPbA,1548
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:88:uvicorn/supervisors/watchfilesreload.py,sha256=u-MuYm0LsZMN670u_TtSWiMBUA2z4j1sIe3O2A67Ep4,2923
+./venv/lib64/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:89:uvicorn/workers.py,sha256=lMCubn1Wi-4h2jxrXNMmhOJZy7ZP8QxbZbP3_2O1iHE,3873
+./venv/lib64/python3.12/site-packages/fastapi-0.135.1.dist-info/METADATA:51:Requires-Dist: uvicorn[standard]>=0.12.0; extra == "standard"
+./venv/lib64/python3.12/site-packages/fastapi-0.135.1.dist-info/METADATA:60:Requires-Dist: uvicorn[standard]>=0.12.0; extra == "standard-no-fastapi-cloud-cli"
+./venv/lib64/python3.12/site-packages/fastapi-0.135.1.dist-info/METADATA:71:Requires-Dist: uvicorn[standard]>=0.12.0; extra == "all"
+./venv/lib64/python3.12/site-packages/fastapi-0.135.1.dist-info/METADATA:318:The command `fastapi dev` reads your `main.py` file, detects the **FastAPI** app in it, and starts a server using <a href="https://www.uvicorn.dev" class="external-link" target="_blank">Uvicorn</a>.
+./venv/lib64/python3.12/site-packages/fastapi-0.135.1.dist-info/METADATA:609:* <a href="https://www.uvicorn.dev" target="_blank"><code>uvicorn</code></a> - for the server that loads and serves your application. This includes `uvicorn[standard]`, which includes some dependencies (e.g. `uvloop`) needed for high performance serving.
+./venv/lib/python3.12/site-packages/uvicorn/middleware/message_logger.py:4:from uvicorn._types import (
+./venv/lib/python3.12/site-packages/uvicorn/middleware/message_logger.py:12:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib/python3.12/site-packages/uvicorn/middleware/message_logger.py:40:        self.logger = logging.getLogger("uvicorn.asgi")
+./venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py:5:from uvicorn._types import ASGI3Application, ASGIReceiveCallable, ASGISendCallable, Scope
+./venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py:53:                    # See: https://github.com/Kludex/uvicorn/issues/1068
+./venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py:141:        # See https://github.com/Kludex/uvicorn/issues/1068#issuecomment-855371576
+./venv/lib/python3.12/site-packages/uvicorn/middleware/wsgi.py:11:from uvicorn._types import (
+./venv/lib/python3.12/site-packages/uvicorn/middleware/asgi2.py:1:from uvicorn._types import (
+./venv/lib/python3.12/site-packages/uvicorn/main.py:16:import uvicorn
+./venv/lib/python3.12/site-packages/uvicorn/main.py:17:from uvicorn._types import ASGIApplication
+./venv/lib/python3.12/site-packages/uvicorn/main.py:18:from uvicorn.config import (
+./venv/lib/python3.12/site-packages/uvicorn/main.py:31:from uvicorn.server import Server
+./venv/lib/python3.12/site-packages/uvicorn/main.py:32:from uvicorn.supervisors import ChangeReload, Multiprocess
+./venv/lib/python3.12/site-packages/uvicorn/main.py:45:logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/main.py:52:        "Running uvicorn {version} with {py_implementation} {py_version} on {system}".format(  # noqa: UP032
+./venv/lib/python3.12/site-packages/uvicorn/main.py:53:            version=uvicorn.__version__,
+./venv/lib/python3.12/site-packages/uvicorn/main.py:359:    help="Display the uvicorn version and exit.",
+./venv/lib/python3.12/site-packages/uvicorn/main.py:594:        logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/main.py:620:            "uvicorn.main.ServerState is deprecated, use uvicorn.server.ServerState instead.",
+./venv/lib/python3.12/site-packages/uvicorn/main.py:623:        from uvicorn.server import ServerState
+./venv/lib/python3.12/site-packages/uvicorn/workers.py:13:from uvicorn._compat import asyncio_run
+./venv/lib/python3.12/site-packages/uvicorn/workers.py:14:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/workers.py:15:from uvicorn.server import Server
+./venv/lib/python3.12/site-packages/uvicorn/workers.py:18:    "The `uvicorn.workers` module is deprecated. Please use `uvicorn-worker` package instead.\n"
+./venv/lib/python3.12/site-packages/uvicorn/workers.py:19:    "For more details, see https://github.com/Kludex/uvicorn-worker.",
+./venv/lib/python3.12/site-packages/uvicorn/workers.py:35:        logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/workers.py:40:        logger = logging.getLogger("uvicorn.access")
+./venv/lib/python3.12/site-packages/uvicorn/workers.py:77:        # See: https://github.com/Kludex/uvicorn/issues/894
+./venv/lib/python3.12/site-packages/uvicorn/workers.py:88:        - https://github.com/Kludex/uvicorn/issues/1116
+./venv/lib/python3.12/site-packages/uvicorn/loops/auto.py:11:        from uvicorn.loops.asyncio import asyncio_loop_factory as loop_factory
+./venv/lib/python3.12/site-packages/uvicorn/loops/auto.py:15:        from uvicorn.loops.uvloop import uvloop_loop_factory
+./venv/lib/python3.12/site-packages/uvicorn/lifespan/off.py:5:from uvicorn import Config
+./venv/lib/python3.12/site-packages/uvicorn/lifespan/on.py:8:from uvicorn import Config
+./venv/lib/python3.12/site-packages/uvicorn/lifespan/on.py:9:from uvicorn._types import (
+./venv/lib/python3.12/site-packages/uvicorn/lifespan/on.py:37:        self.logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/lifespan/on.py:53:        # See https://github.com/Kludex/uvicorn/pull/972
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:17:from uvicorn._types import (
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:27:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:28:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:29:from uvicorn.protocols.utils import (
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:37:from uvicorn.server import ServerState
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:59:        self.logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py:93:            logger=logging.getLogger("uvicorn.error"),
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/wsproto_impl.py:14:from uvicorn._types import (
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/wsproto_impl.py:25:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/wsproto_impl.py:26:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/wsproto_impl.py:27:from uvicorn.protocols.utils import (
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/wsproto_impl.py:35:from uvicorn.server import ServerState
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/wsproto_impl.py:52:        self.logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/auto.py:15:        from uvicorn.protocols.websockets.wsproto_impl import WSProtocol
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/auto.py:19:    from uvicorn.protocols.websockets.websockets_impl import WebSocketProtocol
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:20:from uvicorn._types import (
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:33:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:34:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:35:from uvicorn.protocols.utils import (
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:43:from uvicorn.server import ServerState
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:113:            logger=logging.getLogger("uvicorn.error"),
+./venv/lib/python3.12/site-packages/uvicorn/protocols/websockets/websockets_impl.py:226:        # itself (see https://github.com/Kludex/uvicorn/issues/920)
+./venv/lib/python3.12/site-packages/uvicorn/protocols/utils.py:7:from uvicorn._types import WWWScope
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/auto.py:9:    from uvicorn.protocols.http.h11_impl import H11Protocol
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/auto.py:13:    from uvicorn.protocols.http.httptools_impl import HttpToolsProtocol
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:14:from uvicorn._types import (
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:23:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:24:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:25:from uvicorn.protocols.http.flow_control import CLOSE_HEADER, HIGH_WATER_LIMIT, FlowControl, service_unavailable
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:26:from uvicorn.protocols.utils import get_client_addr, get_local_addr, get_path_with_query_string, get_remote_addr, is_ssl
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:27:from uvicorn.server import ServerState
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:54:        self.logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:55:        self.access_logger = logging.getLogger("uvicorn.access")
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py:159:            msg = "No supported WebSocket library detected. Please use \"pip install 'uvicorn[standard]'\", or install 'websockets' or 'wsproto' manually."  # noqa: E501
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:16:from uvicorn._types import (
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:24:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:25:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:26:from uvicorn.protocols.http.flow_control import CLOSE_HEADER, HIGH_WATER_LIMIT, FlowControl, service_unavailable
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:27:from uvicorn.protocols.utils import get_client_addr, get_local_addr, get_path_with_query_string, get_remote_addr, is_ssl
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:28:from uvicorn.server import ServerState
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:59:        self.logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:60:        self.access_logger = logging.getLogger("uvicorn.access")
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py:162:            msg = "No supported WebSocket library detected. Please use \"pip install 'uvicorn[standard]'\", or install 'websockets' or 'wsproto' manually."  # noqa: E501
+./venv/lib/python3.12/site-packages/uvicorn/protocols/http/flow_control.py:3:from uvicorn._types import ASGIReceiveCallable, ASGISendCallable, Scope
+./venv/lib/python3.12/site-packages/uvicorn/server.py:22:from uvicorn._compat import asyncio_run
+./venv/lib/python3.12/site-packages/uvicorn/server.py:23:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/server.py:26:    from uvicorn.protocols.http.h11_impl import H11Protocol
+./venv/lib/python3.12/site-packages/uvicorn/server.py:27:    from uvicorn.protocols.http.httptools_impl import HttpToolsProtocol
+./venv/lib/python3.12/site-packages/uvicorn/server.py:28:    from uvicorn.protocols.websockets.websockets_impl import WebSocketProtocol
+./venv/lib/python3.12/site-packages/uvicorn/server.py:29:    from uvicorn.protocols.websockets.websockets_sansio_impl import WebSocketsSansIOProtocol
+./venv/lib/python3.12/site-packages/uvicorn/server.py:30:    from uvicorn.protocols.websockets.wsproto_impl import WSProtocol
+./venv/lib/python3.12/site-packages/uvicorn/server.py:41:logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/basereload.py:15:from uvicorn._subprocess import get_subprocess
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/basereload.py:16:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/basereload.py:23:logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/watchfilesreload.py:9:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/watchfilesreload.py:10:from uvicorn.supervisors.basereload import BaseReload
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/statreload.py:8:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/statreload.py:9:from uvicorn.supervisors.basereload import BaseReload
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/statreload.py:11:logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/__init__.py:5:from uvicorn.supervisors.basereload import BaseReload
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/__init__.py:6:from uvicorn.supervisors.multiprocess import Multiprocess
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/__init__.py:12:        from uvicorn.supervisors.watchfilesreload import WatchFilesReload as ChangeReload
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/__init__.py:14:        from uvicorn.supervisors.statreload import StatReload as ChangeReload
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/multiprocess.py:14:from uvicorn._subprocess import get_subprocess
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/multiprocess.py:15:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/supervisors/multiprocess.py:23:logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/__main__.py:1:import uvicorn
+./venv/lib/python3.12/site-packages/uvicorn/__main__.py:4:    uvicorn.main()
+./venv/lib/python3.12/site-packages/uvicorn/config.py:19:from uvicorn._compat import iscoroutinefunction
+./venv/lib/python3.12/site-packages/uvicorn/config.py:20:from uvicorn._types import ASGIApplication
+./venv/lib/python3.12/site-packages/uvicorn/config.py:21:from uvicorn.importer import ImportFromStringError, import_from_string
+./venv/lib/python3.12/site-packages/uvicorn/config.py:22:from uvicorn.logging import TRACE_LOG_LEVEL
+./venv/lib/python3.12/site-packages/uvicorn/config.py:23:from uvicorn.middleware.asgi2 import ASGI2Middleware
+./venv/lib/python3.12/site-packages/uvicorn/config.py:24:from uvicorn.middleware.message_logger import MessageLoggerMiddleware
+./venv/lib/python3.12/site-packages/uvicorn/config.py:25:from uvicorn.middleware.proxy_headers import ProxyHeadersMiddleware
+./venv/lib/python3.12/site-packages/uvicorn/config.py:26:from uvicorn.middleware.wsgi import WSGIMiddleware
+./venv/lib/python3.12/site-packages/uvicorn/config.py:43:    "auto": "uvicorn.protocols.http.auto:AutoHTTPProtocol",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:44:    "h11": "uvicorn.protocols.http.h11_impl:H11Protocol",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:45:    "httptools": "uvicorn.protocols.http.httptools_impl:HttpToolsProtocol",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:48:    "auto": "uvicorn.protocols.websockets.auto:AutoWebSocketsProtocol",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:50:    "websockets": "uvicorn.protocols.websockets.websockets_impl:WebSocketProtocol",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:51:    "websockets-sansio": "uvicorn.protocols.websockets.websockets_sansio_impl:WebSocketsSansIOProtocol",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:52:    "wsproto": "uvicorn.protocols.websockets.wsproto_impl:WSProtocol",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:55:    "auto": "uvicorn.lifespan.on:LifespanOn",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:56:    "on": "uvicorn.lifespan.on:LifespanOn",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:57:    "off": "uvicorn.lifespan.off:LifespanOff",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:61:    "auto": "uvicorn.loops.auto:auto_loop_factory",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:62:    "asyncio": "uvicorn.loops.asyncio:asyncio_loop_factory",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:63:    "uvloop": "uvicorn.loops.uvloop:uvloop_loop_factory",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:74:            "()": "uvicorn.logging.DefaultFormatter",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:79:            "()": "uvicorn.logging.AccessFormatter",
+./venv/lib/python3.12/site-packages/uvicorn/config.py:96:        "uvicorn": {"handlers": ["default"], "level": "INFO", "propagate": False},
+./venv/lib/python3.12/site-packages/uvicorn/config.py:97:        "uvicorn.error": {"level": "INFO"},
+./venv/lib/python3.12/site-packages/uvicorn/config.py:98:        "uvicorn.access": {"handlers": ["access"], "level": "INFO", "propagate": False},
+./venv/lib/python3.12/site-packages/uvicorn/config.py:102:logger = logging.getLogger("uvicorn.error")
+./venv/lib/python3.12/site-packages/uvicorn/config.py:378:                # Install the PyYAML package or the uvicorn[standard] optional
+./venv/lib/python3.12/site-packages/uvicorn/config.py:395:            logging.getLogger("uvicorn.error").setLevel(log_level)
+./venv/lib/python3.12/site-packages/uvicorn/config.py:396:            logging.getLogger("uvicorn.access").setLevel(log_level)
+./venv/lib/python3.12/site-packages/uvicorn/config.py:397:            logging.getLogger("uvicorn.asgi").setLevel(log_level)
+./venv/lib/python3.12/site-packages/uvicorn/config.py:399:            logging.getLogger("uvicorn.access").handlers = []
+./venv/lib/python3.12/site-packages/uvicorn/config.py:400:            logging.getLogger("uvicorn.access").propagate = False
+./venv/lib/python3.12/site-packages/uvicorn/config.py:421:            [(b"server", b"uvicorn")] + encoded_headers
+./venv/lib/python3.12/site-packages/uvicorn/config.py:483:            "The `setup_event_loop` method was replaced by `get_loop_factory` in uvicorn 0.36.0.\n"
+./venv/lib/python3.12/site-packages/uvicorn/config.py:485:            "https://github.com/Kludex/uvicorn/discussions/2706. Thank you, and sorry for the inconvenience."
+./venv/lib/python3.12/site-packages/uvicorn/_subprocess.py:15:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/__init__.py:1:from uvicorn.config import Config
+./venv/lib/python3.12/site-packages/uvicorn/__init__.py:2:from uvicorn.main import Server, main, run
+./venv/lib/python3.12/site-packages/starlette-0.52.1.dist-info/METADATA:90:You'll also want to install an ASGI server, such as [uvicorn](https://www.uvicorn.org/), [daphne](https://github.com/django/daphne/), or [hypercorn](https://hypercorn.readthedocs.io/en/latest/).
+./venv/lib/python3.12/site-packages/starlette-0.52.1.dist-info/METADATA:93:$ pip install uvicorn
+./venv/lib/python3.12/site-packages/starlette-0.52.1.dist-info/METADATA:117:$ uvicorn main:app
+./venv/lib/python3.12/site-packages/starlette-0.52.1.dist-info/METADATA:150:$ uvicorn example:app
+./venv/lib/python3.12/site-packages/starlette-0.52.1.dist-info/METADATA:155:Run uvicorn with `--reload` to enable auto-reloading on code changes.
+./venv/lib/python3.12/site-packages/websockets-16.0.dist-info/METADATA:153:  uvicorn_ or Sanic_.
+./venv/lib/python3.12/site-packages/websockets-16.0.dist-info/METADATA:155:.. _uvicorn: https://www.uvicorn.org/
+./venv/lib/python3.12/site-packages/pydantic/_internal/_validators.py:80:    """Inspired by uvicorn — dotted paths should include a colon before the final item if that item is not a module.
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/entry_points.txt:2:uvicorn = uvicorn.main:main
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:2:Name: uvicorn
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:5:Project-URL: Changelog, https://uvicorn.dev/release-notes
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:7:Project-URL: Homepage, https://uvicorn.dev/
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:8:Project-URL: Source, https://github.com/Kludex/uvicorn
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:41:  <img width="320" height="320" src="https://raw.githubusercontent.com/tomchristie/uvicorn/main/docs/uvicorn.png" alt='uvicorn'>
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:50:[![Build Status](https://github.com/Kludex/uvicorn/workflows/Test%20Suite/badge.svg)](https://github.com/Kludex/uvicorn/actions)
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:51:[![Package version](https://badge.fury.io/py/uvicorn.svg)](https://pypi.python.org/pypi/uvicorn)
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:52:[![Supported Python Version](https://img.shields.io/pypi/pyversions/uvicorn.svg?color=%2334D058)](https://pypi.org/project/uvicorn)
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:57:**Documentation**: [https://uvicorn.dev](https://uvicorn.dev)
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:59:**Source Code**: [https://www.github.com/Kludex/uvicorn](https://www.github.com/Kludex/uvicorn)
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:76:$ pip install uvicorn
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:79:This will install uvicorn with minimal (pure Python) dependencies.
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:82:$ pip install 'uvicorn[standard]'
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:85:This will install uvicorn with "Cython-based" dependencies (where possible) and other "optional extras".
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:122:$ uvicorn example:app
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/METADATA:184:<p align="center"><i>Uvicorn is <a href="https://github.com/Kludex/uvicorn/blob/main/LICENSE.md">BSD licensed</a> code.<br/>Designed & crafted with care.</i><br/>&mdash; 🦄  &mdash;</p>
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:1:../../../bin/uvicorn,sha256=-cAZFfg7HpAFTOq6pEAvlipWX3ig-XF9qK6myUUQloU,173
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:2:uvicorn-0.42.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:3:uvicorn-0.42.0.dist-info/METADATA,sha256=0NS0dEthj9a5UxNHad3aucGZZU4_o4mwyVk2Obn_apk,6738
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:4:uvicorn-0.42.0.dist-info/RECORD,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:5:uvicorn-0.42.0.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:6:uvicorn-0.42.0.dist-info/WHEEL,sha256=QccIxa26bgl1E6uMy58deGWi-0aeIkkangHcxk2kWfw,87
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:7:uvicorn-0.42.0.dist-info/entry_points.txt,sha256=FW1w-hkc9QgwaGoovMvm0ZY73w_NcycWdGAUfDsNGxw,46
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:8:uvicorn-0.42.0.dist-info/licenses/LICENSE.md,sha256=7-Gs8-YvuZwoiw7HPlp3O3Jo70Mg_nV-qZQhTktjw3E,1526
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:9:uvicorn/__init__.py,sha256=9qo5xhNrQkfqrw9g1XU-bGRK_dNk1nCBRzUa0WDx4fk,147
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:10:uvicorn/__main__.py,sha256=DQizy6nKP0ywhPpnCHgmRDYIMfcqZKVEzNIWQZjqtVQ,62
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:11:uvicorn/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:12:uvicorn/__pycache__/__main__.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:13:uvicorn/__pycache__/_compat.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:14:uvicorn/__pycache__/_subprocess.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:15:uvicorn/__pycache__/_types.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:16:uvicorn/__pycache__/config.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:17:uvicorn/__pycache__/importer.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:18:uvicorn/__pycache__/logging.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:19:uvicorn/__pycache__/main.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:20:uvicorn/__pycache__/server.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:21:uvicorn/__pycache__/workers.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:22:uvicorn/_compat.py,sha256=6X49c9ovzmMHir2S3syinOQMzSPBcp8MNuI9ZQrbYiU,2916
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:23:uvicorn/_subprocess.py,sha256=fQ4JTajuXay6mVc8KQNGfXu6JHoab46aS6kyIMWJMPk,2776
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:24:uvicorn/_types.py,sha256=JDM6E-hqZ6o_cSZvjDULjAv77PFH2pLe_Vgqshe8qH4,7677
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:25:uvicorn/config.py,sha256=aYK4Nc-M0uvbT4LmgIvY8c00kekEz0P4BWhG8VMojcg,22095
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:26:uvicorn/importer.py,sha256=nRt0QQ3qpi264-n_mR0l55C2ddM8nowTNzT1jsWaam8,1128
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:27:uvicorn/lifespan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:28:uvicorn/lifespan/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:29:uvicorn/lifespan/__pycache__/off.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:30:uvicorn/lifespan/__pycache__/on.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:31:uvicorn/lifespan/off.py,sha256=nfI6qHAUo_8-BEXMBKoHQ9wUbsXrPaXLCbDSS0vKSr8,332
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:32:uvicorn/lifespan/on.py,sha256=iETPFj6SFhPDPcdeGxfa43LKImJU7MI5i7QUUepBcPE,5173
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:33:uvicorn/logging.py,sha256=IBPSo2qRBWJRj5C2nN7I1civFAj9jKZ5Azxk0JpPB98,4235
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:34:uvicorn/loops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:35:uvicorn/loops/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:36:uvicorn/loops/__pycache__/asyncio.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:37:uvicorn/loops/__pycache__/auto.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:38:uvicorn/loops/__pycache__/uvloop.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:39:uvicorn/loops/asyncio.py,sha256=a8wO4fB4pCk-RLICq7CnGr_cxQI7MBLJj-Go4UQldD8,333
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:40:uvicorn/loops/auto.py,sha256=pdTsMcqkbE8fvdNgLs1y4c6hsuN598mZOSOlC0a23S4,566
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:41:uvicorn/loops/uvloop.py,sha256=Ca-TL-W8tbdEW5uvL_GrMih7G8e_t_vhNevi2NKYjEU,236
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:42:uvicorn/main.py,sha256=e3CTIV0c80cp1639Ttnej7b5uvdtgLLWtSOcHU8Gu54,18183
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:43:uvicorn/middleware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:44:uvicorn/middleware/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:45:uvicorn/middleware/__pycache__/asgi2.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:46:uvicorn/middleware/__pycache__/message_logger.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:47:uvicorn/middleware/__pycache__/proxy_headers.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:48:uvicorn/middleware/__pycache__/wsgi.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:49:uvicorn/middleware/asgi2.py,sha256=YQrQNm3RehFts3mzk3k4yw8aD8Egtj0tRS3N45YkQa0,394
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:50:uvicorn/middleware/message_logger.py,sha256=IHEZUSnFNaMFUFdwtZO3AuFATnYcSor-gVtOjbCzt8M,2859
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:51:uvicorn/middleware/proxy_headers.py,sha256=yQG3ThmZhRh9jp-AId7DQhb5WVl6to0hD1G0DPrtLow,5790
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:52:uvicorn/middleware/wsgi.py,sha256=VnbnkdCL3_ctLWzk1j39xvxysuoAB3kSYmi8TsOLpNs,7125
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:53:uvicorn/protocols/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:54:uvicorn/protocols/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:55:uvicorn/protocols/__pycache__/utils.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:56:uvicorn/protocols/http/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:57:uvicorn/protocols/http/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:58:uvicorn/protocols/http/__pycache__/auto.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:59:uvicorn/protocols/http/__pycache__/flow_control.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:60:uvicorn/protocols/http/__pycache__/h11_impl.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:61:uvicorn/protocols/http/__pycache__/httptools_impl.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:62:uvicorn/protocols/http/auto.py,sha256=YfXGyzWTaaE2p_jkTPWrJCXsxEaQnC3NK0-G7Wgmnls,403
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:63:uvicorn/protocols/http/flow_control.py,sha256=050WVg31EvPOkHwynCoMP1zXFl_vO3U4durlc5vyp4U,1701
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:64:uvicorn/protocols/http/h11_impl.py,sha256=pAl-5O1oLVzNPzDpK_S5SKBwpzTthOkieohz5cZzypM,21225
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:65:uvicorn/protocols/http/httptools_impl.py,sha256=esxm8Wy_jg-egyOMSrLLEsqzx4_IMJ1lHWfYfXHySdo,22322
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:66:uvicorn/protocols/utils.py,sha256=1hKdDCmo_GtGrK1zZfa70jL7Hr3mDE8RnL69O4rHQRg,2058
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:67:uvicorn/protocols/websockets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:68:uvicorn/protocols/websockets/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:69:uvicorn/protocols/websockets/__pycache__/auto.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:70:uvicorn/protocols/websockets/__pycache__/websockets_impl.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:71:uvicorn/protocols/websockets/__pycache__/websockets_sansio_impl.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:72:uvicorn/protocols/websockets/__pycache__/wsproto_impl.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:73:uvicorn/protocols/websockets/auto.py,sha256=pAEMIsyXQ12CL6ffaEJQ2cQEC8yAr8sr7bC0H6hzBfs,590
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:74:uvicorn/protocols/websockets/websockets_impl.py,sha256=l4pBaHAsvM-Y_BoPhe8j0fq1DCjqjPJ2PYRDUbukjRs,15419
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:75:uvicorn/protocols/websockets/websockets_sansio_impl.py,sha256=Tt0NWFvJeDq7o6vzE-KORIN75rkDEmQ2-JxTtl4yKC8,17221
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:76:uvicorn/protocols/websockets/wsproto_impl.py,sha256=uVOrpfa4tdY-dNGAJdcpvDYxCT6tM6voaeKK9zJtsp4,15273
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:77:uvicorn/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:78:uvicorn/server.py,sha256=fXk3__HBf1g-oh_4_OXIpb8tnTyafxuWRiEet6SQEvM,13368
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:79:uvicorn/supervisors/__init__.py,sha256=wT8eOEIqT1yWQgytZtv5taWMul7xoTIY0xm1m4oyPTw,507
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:80:uvicorn/supervisors/__pycache__/__init__.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:81:uvicorn/supervisors/__pycache__/basereload.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:82:uvicorn/supervisors/__pycache__/multiprocess.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:83:uvicorn/supervisors/__pycache__/statreload.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:84:uvicorn/supervisors/__pycache__/watchfilesreload.cpython-312.pyc,,
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:85:uvicorn/supervisors/basereload.py,sha256=mYOPopNS6fVTrqfQ4HzclH7Xw-VVQy7ZDSINv5_lu04,4018
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:86:uvicorn/supervisors/multiprocess.py,sha256=_lU92Bnf_IqibFmmNoojY3J3fR6LzSBa76BpmcSMfHc,7580
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:87:uvicorn/supervisors/statreload.py,sha256=XPaEtVXaasII1kkG32UUG8oD7-fS0FwyXkQLF9QYPbA,1548
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:88:uvicorn/supervisors/watchfilesreload.py,sha256=u-MuYm0LsZMN670u_TtSWiMBUA2z4j1sIe3O2A67Ep4,2923
+./venv/lib/python3.12/site-packages/uvicorn-0.42.0.dist-info/RECORD:89:uvicorn/workers.py,sha256=lMCubn1Wi-4h2jxrXNMmhOJZy7ZP8QxbZbP3_2O1iHE,3873
+./venv/lib/python3.12/site-packages/fastapi-0.135.1.dist-info/METADATA:51:Requires-Dist: uvicorn[standard]>=0.12.0; extra == "standard"
+./venv/lib/python3.12/site-packages/fastapi-0.135.1.dist-info/METADATA:60:Requires-Dist: uvicorn[standard]>=0.12.0; extra == "standard-no-fastapi-cloud-cli"
+./venv/lib/python3.12/site-packages/fastapi-0.135.1.dist-info/METADATA:71:Requires-Dist: uvicorn[standard]>=0.12.0; extra == "all"
+./venv/lib/python3.12/site-packages/fastapi-0.135.1.dist-info/METADATA:318:The command `fastapi dev` reads your `main.py` file, detects the **FastAPI** app in it, and starts a server using <a href="https://www.uvicorn.dev" class="external-link" target="_blank">Uvicorn</a>.
+./venv/lib/python3.12/site-packages/fastapi-0.135.1.dist-info/METADATA:609:* <a href="https://www.uvicorn.dev" target="_blank"><code>uvicorn</code></a> - for the server that loads and serves your application. This includes `uvicorn[standard]`, which includes some dependencies (e.g. `uvloop`) needed for high performance serving.
+./venv/bin/uvicorn:3:from uvicorn.main import main
+./systemd/jarvis.service:11:ExecStart=/opt/JarvisOS/venv/bin/python -m uvicorn services.api:app --host 0.0.0.0 --port 7070
+./fix_syntax.py:93:    import uvicorn
+./fix_syntax.py:94:    uvicorn.run(app, host="0.0.0.0", port=7070)
+./delaney.service:8:ExecStart=/opt/daphne/venv/bin/python -m uvicorn main:APP --host 0.0.0.0 --port 1720
+./jarvis.service:9:ExecStart=/opt/JarvisOS/venv/bin/python3 -m uvicorn services.api:app --host 0.0.0.0 --port 7070
+./requirements.txt:2:uvicorn[standard]==0.30.6
+./tools/jarvis_doctor.py:43:            subprocess.check_output([VENV_PYTHON, "-c", "import fastapi, uvicorn, psutil"])
+./tools/jarvis_doctor.py:46:            check("Core Libs", False, "Run: /opt/JarvisOS/venv/bin/pip install fastapi uvicorn psutil requests python-multipart")
+./tools/jarvis_snapshot_then_fix.sh:105:"$VENV/bin/pip" install fastapi uvicorn requests python-multipart aiofiles >/dev/null
+./apply_go_for_it_all.sh:811:ExecStart=/opt/daphne/venv/bin/python -m uvicorn main:APP --host 0.0.0.0 --port 1720
+./export_jarvis_clean_snapshot.sh:54:  grep -RInE 'FastAPI\(|app *= *FastAPI|uvicorn|APIRouter\(' . 2>/dev/null | sort > "${MANIFEST_DIR}/python_entrypoints.txt" || true
+./repair_jarvis.py:98:    import uvicorn
+./repair_jarvis.py:99:    uvicorn.run(app, host="0.0.0.0", port=7070)
+./services/api.py:404:    import uvicorn
+./services/api.py:405:    uvicorn.run(app, host="0.0.0.0", port=7070)
+./apply_dual_ai_patch.sh:316:ExecStart=/opt/JarvisOS/venv/bin/python3 -m uvicorn app:app --app-dir /opt/DelaneyOS --host 0.0.0.0 --port 1720

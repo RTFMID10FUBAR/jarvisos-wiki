@@ -1,0 +1,117 @@
+./docsJarvis.txt:16:The AI layer (`brain.py`) is decoupled from execution. It returns text/code, which the **Action Router** executes if specific intent patterns are detected (e.g., "sys_update", "vpn_connect").
+./docsJarvis.txt:934:## DelaneyOS
+./docsJarvis.txt:938:- Memory: /opt/DelaneyOS/memory
+./docsJarvis.txt:939:- UI: /opt/DelaneyOS/ui
+./_patch_backups/2026-01-19_231817/services_features_actions.py:25:        resp = brain.get_response(i)
+./_patch_backups/2026-01-19_231817/services_features_actions.py:34:    resp = brain.get_response(text)
+./_patch_backups/2026-01-19_232037/services_features_actions.py:55:    resp = brain.get_response(intent)
+./_patch_backups/2026-01-19_232037/services_features_actions.py:70:    resp = brain.get_response(text)
+./apply_voice_lab_dashboard.sh:41:        return Path("/opt/DelaneyOS/config/elevenlabs.json")
+./venv/lib64/python3.12/site-packages/pydantic-2.12.5.dist-info/METADATA:57:Fast and extensible, Pydantic plays nicely with your linters/IDE/brain.
+./venv/lib/python3.12/site-packages/pydantic-2.12.5.dist-info/METADATA:57:Fast and extensible, Pydantic plays nicely with your linters/IDE/brain.
+./docs/AI_ARCHITECTURE.md:16:The AI layer (`brain.py`) is decoupled from execution. It returns text/code, which the **Action Router** executes if specific intent patterns are detected (e.g., "sys_update", "vpn_connect").
+./docs/DUAL_AI_ARCHITECTURE.md:10:## DelaneyOS
+./docs/DUAL_AI_ARCHITECTURE.md:14:- Memory: /opt/DelaneyOS/memory
+./docs/DUAL_AI_ARCHITECTURE.md:15:- UI: /opt/DelaneyOS/ui
+./apply_go_for_it_all.sh:20:         /opt/DelaneyOS/config \
+./apply_go_for_it_all.sh:21:         /opt/DelaneyOS/memory/bridge_outbox \
+./apply_go_for_it_all.sh:22:         /opt/DelaneyOS/memory/bridge_inbox \
+./apply_go_for_it_all.sh:29:backup_if_exists /opt/JarvisOS/services/core/brain.py
+./apply_go_for_it_all.sh:32:backup_if_exists /opt/DelaneyOS/config/personality.yaml
+./apply_go_for_it_all.sh:33:backup_if_exists /opt/DelaneyOS/config/voice_options.json
+./apply_go_for_it_all.sh:34:backup_if_exists /opt/DelaneyOS/config/elevenlabs.json
+./apply_go_for_it_all.sh:82:cat >/opt/DelaneyOS/config/personality.yaml <<'YAML'
+./apply_go_for_it_all.sh:107:cat >/opt/DelaneyOS/config/voice_options.json <<'JSON'
+./apply_go_for_it_all.sh:151:delaney_cfg = Path("/opt/DelaneyOS/config/elevenlabs.json")
+./apply_go_for_it_all.sh:152:voice_options = json.loads(Path("/opt/DelaneyOS/config/voice_options.json").read_text())
+./apply_go_for_it_all.sh:184:cat >/opt/JarvisOS/services/core/brain.py <<'PY'
+./apply_go_for_it_all.sh:408:VOICE_CFG = Path("/opt/DelaneyOS/config/elevenlabs.json")
+./apply_go_for_it_all.sh:409:VOICE_OPTIONS = Path("/opt/DelaneyOS/config/voice_options.json")
+./apply_go_for_it_all.sh:410:PERSONA = Path("/opt/DelaneyOS/config/personality.yaml")
+./apply_go_for_it_all.sh:411:BRIDGE_OUT = Path("/opt/DelaneyOS/memory/bridge_outbox")
+./apply_go_for_it_all.sh:412:BRIDGE_IN = Path("/opt/DelaneyOS/memory/bridge_inbox")
+./services/api.py:104:# NEW NEURAL CORE (Routing via JarvisCore)
+./services/api.py:239:    target_root = "/opt/DelaneyOS" if system_name == "delaney" else "/opt/JarvisOS"
+./services/api.py:261:    target_root = "/opt/DelaneyOS" if system_name == "delaney" else "/opt/JarvisOS"
+./services/api.py:283:    target_root = "/opt/DelaneyOS" if system_name == "delaney" else "/opt/JarvisOS"
+./services/api.py:305:    target_root = "/opt/DelaneyOS" if system_name == "delaney" else "/opt/JarvisOS"
+./services/voice_lab.py:35:        return Path("/opt/DelaneyOS/config/elevenlabs.json")
+./services/jarvis_core.py:5:class JarvisCore:
+./services/jarvis_core.py:15:core = JarvisCore()
+./apply_companion_stack_patch_v2.sh:13:backup_if_exists /opt/DelaneyOS/config/personality.yaml
+./apply_companion_stack_patch_v2.sh:14:backup_if_exists /opt/DelaneyOS/config/router.json
+./apply_companion_stack_patch_v2.sh:15:backup_if_exists /opt/DelaneyOS/model/Modelfile
+./apply_companion_stack_patch_v2.sh:23:sudo mkdir -p /opt/DelaneyOS/config /opt/DelaneyOS/model /opt/JarvisOS/docs /opt/JarvisOS/tools /opt/JarvisOS/logs
+./apply_companion_stack_patch_v2.sh:28:sudo tee /opt/DelaneyOS/config/personality.yaml >/dev/null <<'EOF'
+./apply_companion_stack_patch_v2.sh:58:sudo tee /opt/DelaneyOS/config/router.json >/dev/null <<'EOF'
+./apply_companion_stack_patch_v2.sh:77:sudo tee /opt/DelaneyOS/model/Modelfile >/dev/null <<'EOF'
+./apply_companion_stack_patch_v2.sh:129:ollama create delaney:latest -f /opt/DelaneyOS/model/Modelfile
+./apply_companion_stack_patch_v2.sh:146:VOICE_CFG = Path("/opt/DelaneyOS/config/elevenlabs.json")
+./apply_companion_stack_patch_v2.sh:147:VOICE_OPTIONS = Path("/opt/DelaneyOS/config/voice_options.json")
+./apply_companion_stack_patch_v2.sh:148:PERSONA = Path("/opt/DelaneyOS/config/personality.yaml")
+./apply_companion_stack_patch_v2.sh:149:ROUTER_CFG = Path("/opt/DelaneyOS/config/router.json")
+./apply_companion_stack_patch_v2.sh:464:SRC="/opt/JarvisOS/docs /opt/JarvisOS/config /opt/DelaneyOS/config /opt/VoiceForge"
+./apply_dual_ai_patch.sh:5:DROOT=/opt/DelaneyOS
+./apply_dual_ai_patch.sh:11:cat > "$JROOT/services/core/brain.py" <<'PY'
+./apply_dual_ai_patch.sh:20:DROOT = "/opt/DelaneyOS"
+./apply_dual_ai_patch.sh:162:class JarvisCore:
+./apply_dual_ai_patch.sh:172:core = JarvisCore()
+./apply_dual_ai_patch.sh:265:    inject = '''\nclass DelaneyChat(BaseModel):\n    message: str\n\n@app.post("/api/delaney/chat")\ndef delaney_chat(req: DelaneyChat):\n    out = delaney_core.process_input(req.message, system_name="delaney")\n    return {"result": out["text"], "meta": out["meta"], "audio": None}\n\n@app.post("/api/memory/ingest")\nasync def ingest_memory(file: UploadFile = File(...), system_name: str = Form("jarvis")):\n    target_root = "/opt/DelaneyOS" if system_name == "delaney" else "/opt/JarvisOS"\n    import_dir = Path(target_root) / "import"\n    import_dir.mkdir(parents=True, exist_ok=True)\n    raw = await file.read()\n    dest = import_dir / file.filename\n    dest.write_bytes(raw)\n    text = raw.decode("utf-8", errors="ignore")[:12000]\n    from services.core.brain import remember_interaction\n    remember_interaction(f"INGEST:{file.filename}", text, system_name=system_name)\n    return {"status": "ingested", "system_name": system_name, "filename": file.filename, "bytes": len(raw)}\n'''
+./apply_dual_ai_patch.sh:281:app = FastAPI(title="DelaneyOS")
+./apply_dual_ai_patch.sh:283:if os.path.isdir("/opt/DelaneyOS/ui"):
+./apply_dual_ai_patch.sh:284:    app.mount("/", StaticFiles(directory="/opt/DelaneyOS/ui", html=True), name="delaney_ui")
+./apply_dual_ai_patch.sh:297:    import_dir = os.path.join('/opt/DelaneyOS', 'import')
+./apply_dual_ai_patch.sh:309:Description=DelaneyOS AI Service
+./apply_dual_ai_patch.sh:314:WorkingDirectory=/opt/DelaneyOS
+./apply_dual_ai_patch.sh:316:ExecStart=/opt/JarvisOS/venv/bin/python3 -m uvicorn app:app --app-dir /opt/DelaneyOS --host 0.0.0.0 --port 1720
+./apply_dual_ai_patch.sh:332:## DelaneyOS
+./apply_dual_ai_patch.sh:336:- Memory: /opt/DelaneyOS/memory
+./apply_dual_ai_patch.sh:337:- UI: /opt/DelaneyOS/ui
+/etc/systemd/system/jarvis-whisper.service:5:ExecStart=/home/kali/Projects/JarvisOS/whisper_loop.sh
+/etc/systemd/system/jarvis-wiki.service:3:After=network.target jarvis-brain.service
+/etc/systemd/system/jarvis-wiki.service:7:ExecStart=/home/kali/Projects/JarvisOS/scripts/wiki_publish.sh
+/etc/systemd/system/jarvis-brain.service:34:ExecStart=/opt/JarvisOS/venv/bin/python -m uvicorn brain.server:app --host 0.0.0.0 --port 6060
+/etc/systemd/system/jarviscore.service:8:WorkingDirectory=/opt/JarvisOS/JarvisCore
+/etc/systemd/system/jarviscore.service:9:Environment=PYTHONPATH=/opt/JarvisOS/JarvisCore
+/etc/systemd/system/jarviscore.service:10:EnvironmentFile=/opt/JarvisOS/JarvisCore/.env
+/etc/systemd/system/jarviscore.service:11:ExecStart=/opt/JarvisOS/JarvisCore/venv/bin/uvicorn brain.server:app --host 0.0.0.0 --port 6060
+/etc/systemd/system/jarvis-audio-mirror.service:6:ExecStart=/bin/bash -c 'inotifywait -m /home/kali/Projects/JarvisOS/voice/cache -e close_write --format "%f" | while read f; do [[ "$f" == *.pcm ]] && cat "/home/kali/Projects/JarvisOS/voice/cache/$f" | nc 192.168.1.3 7000; done'
+/etc/systemd/system/jarvis-lipsync.service:6:ExecStart=/bin/bash -c 'inotifywait -m /home/kali/Projects/JarvisOS/voice/cache -e close_write --format "%f" | while read f; do if [[ "$f" == *.pcm ]]; then ffmpeg -y -f s16le -ar 16000 -ac 1 -i "/home/kali/Projects/JarvisOS/voice/cache/$f" "/home/kali/Projects/JarvisOS/voice/cache/${f%.pcm}.wav" && rhubarb -f json "/home/kali/Projects/JarvisOS/voice/cache/${f%.pcm}.wav" -o "/home/kali/Projects/JarvisOS/voice/cache/${f%.pcm}.json"; fi; done'
+/etc/systemd/system/jarvis-mic.service:3:After=jarvis-brain.service
+/etc/systemd/system/jarvis-mic.service:6:WorkingDirectory=/home/kali/Projects/JarvisOS/voice/whisper
+/etc/systemd/system/jarvis-mic.service:7:ExecStart=/home/kali/Projects/JarvisOS/JarvisOS_venv/bin/python /home/kali/Projects/JarvisOS/voice/mic.py
+/etc/systemd/system/jarvis-api.service:9:WorkingDirectory=/home/kali/Projects/JarvisOS
+/etc/systemd/system/jarvis-api.service:11:ExecStart=/home/kali/Projects/JarvisOS/Jarvis_venv/bin/python3 /home/kali/Projects/JarvisOS/core/api_server.py
+/etc/systemd/system/jarvis-api.service:14:StandardOutput=append:/home/kali/Projects/JarvisOS/logs/jarvis-api.log
+/etc/systemd/system/jarvis-api.service:15:StandardError=append:/home/kali/Projects/JarvisOS/logs/jarvis-api.err
+/etc/systemd/system/jarvis-chat.service:6:ExecStart=/home/kali/Projects/JarvisOS/venv/bin/python /home/kali/Projects/JarvisOS/chat_ui.py
+/etc/systemd/system/jarvis-chat.service:9:WorkingDirectory=/home/kali/Projects/JarvisOS
+/etc/systemd/system/jarvis-ingest.service:7:WorkingDirectory=/home/kali/Projects/JarvisOS
+/etc/systemd/system/jarvis-ingest.service:8:ExecStart=/home/kali/Projects/JarvisOS/Jarvis_venv/bin/python /home/kali/Projects/JarvisOS/core/ingest_daemon.py
+/etc/systemd/system/jarvis-ui.service:7:ExecStart=/usr/bin/python3 -m uvicorn brain.chat_api:app --host 0.0.0.0 --port 6060
+/etc/systemd/system/_jarvis_old_baks/jarvis.service.bak:8:WorkingDirectory=/home/kali/Projects/JarvisOS
+/etc/systemd/system/_jarvis_old_baks/jarvis.service.bak:9:ExecStart=/home/kali/Projects/JarvisOS/jarvis.sh
+/etc/systemd/system/jarvis-live.service:6:ExecStart=/home/kali/Projects/JarvisOS/Jarvis_venv/bin/python /home/kali/Projects/JarvisOS/jarvis_live/jarvis_live.py
+/etc/systemd/system/jarvis-live.service:9:WorkingDirectory=/home/kali/Projects/JarvisOS/jarvis_live
+/etc/systemd/system/multi-user.target.wants/jarviscore.service:8:WorkingDirectory=/opt/JarvisOS/JarvisCore
+/etc/systemd/system/multi-user.target.wants/jarviscore.service:9:Environment=PYTHONPATH=/opt/JarvisOS/JarvisCore
+/etc/systemd/system/multi-user.target.wants/jarviscore.service:10:EnvironmentFile=/opt/JarvisOS/JarvisCore/.env
+/etc/systemd/system/multi-user.target.wants/jarviscore.service:11:ExecStart=/opt/JarvisOS/JarvisCore/venv/bin/uvicorn brain.server:app --host 0.0.0.0 --port 6060
+/etc/systemd/system/multi-user.target.wants/jarvis-audio-mirror.service:6:ExecStart=/bin/bash -c 'inotifywait -m /home/kali/Projects/JarvisOS/voice/cache -e close_write --format "%f" | while read f; do [[ "$f" == *.pcm ]] && cat "/home/kali/Projects/JarvisOS/voice/cache/$f" | nc 192.168.1.3 7000; done'
+/etc/systemd/system/multi-user.target.wants/jarvis-lipsync.service:6:ExecStart=/bin/bash -c 'inotifywait -m /home/kali/Projects/JarvisOS/voice/cache -e close_write --format "%f" | while read f; do if [[ "$f" == *.pcm ]]; then ffmpeg -y -f s16le -ar 16000 -ac 1 -i "/home/kali/Projects/JarvisOS/voice/cache/$f" "/home/kali/Projects/JarvisOS/voice/cache/${f%.pcm}.wav" && rhubarb -f json "/home/kali/Projects/JarvisOS/voice/cache/${f%.pcm}.wav" -o "/home/kali/Projects/JarvisOS/voice/cache/${f%.pcm}.json"; fi; done'
+/etc/systemd/system/multi-user.target.wants/jarvis-mic.service:3:After=jarvis-brain.service
+/etc/systemd/system/multi-user.target.wants/jarvis-mic.service:6:WorkingDirectory=/home/kali/Projects/JarvisOS/voice/whisper
+/etc/systemd/system/multi-user.target.wants/jarvis-mic.service:7:ExecStart=/home/kali/Projects/JarvisOS/JarvisOS_venv/bin/python /home/kali/Projects/JarvisOS/voice/mic.py
+/etc/systemd/system/multi-user.target.wants/jarvis-chat.service:6:ExecStart=/home/kali/Projects/JarvisOS/venv/bin/python /home/kali/Projects/JarvisOS/chat_ui.py
+/etc/systemd/system/multi-user.target.wants/jarvis-chat.service:9:WorkingDirectory=/home/kali/Projects/JarvisOS
+/etc/systemd/system/multi-user.target.wants/jarvis-ingest.service:7:WorkingDirectory=/home/kali/Projects/JarvisOS
+/etc/systemd/system/multi-user.target.wants/jarvis-ingest.service:8:ExecStart=/home/kali/Projects/JarvisOS/Jarvis_venv/bin/python /home/kali/Projects/JarvisOS/core/ingest_daemon.py
+/etc/systemd/system/multi-user.target.wants/jarvis-ui.service:7:ExecStart=/usr/bin/python3 -m uvicorn brain.chat_api:app --host 0.0.0.0 --port 6060
+/etc/systemd/system/multi-user.target.wants/jarvis-diagnostics.service:6:ExecStart=/home/kali/Projects/JarvisOS/JarvisOS_venv/bin/python /home/kali/Projects/JarvisOS/brain/diagnostics.py
+/etc/systemd/system/multi-user.target.wants/jarvis-autonomy.service:7:ExecStart=/home/kali/Projects/JarvisOS/Jarvis_venv/bin/python - <<PY
+/etc/systemd/system/multi-user.target.wants/jarvis-autonomy.service:29:WorkingDirectory=/home/kali/Projects/JarvisOS
+/etc/systemd/system/jarvis-cc.service:8:WorkingDirectory=/home/kali/Projects/JarvisOS/CommandCenter
+/etc/systemd/system/jarvis-cc.service:9:ExecStart=/home/kali/Projects/JarvisOS/CommandCenter/venv/bin/python jarvis_cc.py
+/etc/systemd/system/jarvis-diagnostics.service:6:ExecStart=/home/kali/Projects/JarvisOS/JarvisOS_venv/bin/python /home/kali/Projects/JarvisOS/brain/diagnostics.py
+/etc/systemd/system/jarvis-autonomy.service:7:ExecStart=/home/kali/Projects/JarvisOS/Jarvis_venv/bin/python - <<PY
+/etc/systemd/system/jarvis-autonomy.service:29:WorkingDirectory=/home/kali/Projects/JarvisOS
